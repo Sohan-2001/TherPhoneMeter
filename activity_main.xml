@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020826"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textViewtemp"
+        android:layout_width="417dp"
+        android:layout_height="53dp"
+        android:background="#423949AB"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:includeFontPadding="true"
+        android:inputType="text|textPhonetic|textPassword|textCapCharacters"
+        android:text="Phone Battery Temperature"
+        android:textAlignment="gravity"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224"
+        tools:ignore="HardcodedText,TextViewEdits" />
+
+    <TextView
+        android:id="@+id/textViewLight"
+        android:layout_width="416dp"
+        android:layout_height="58dp"
+        android:background="#423949AB"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:includeFontPadding="true"
+        android:inputType="text|textPhonetic|textPassword|textCapCharacters"
+        android:text="Surrounding Light Intensity"
+        android:textAlignment="gravity"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359"
+        tools:ignore="HardcodedText,TextViewEdits" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click To Check"
+        app:iconTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Estimate Your Surrounding Temperature"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="366dp"
+        android:layout_height="46dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="(Estimated) Your Surrounding Temperature"
+        android:textColor="#CCE8EB"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="329dp"
+        android:layout_height="259dp"
+        android:background="#00897B"
+        android:gravity="center"
+        android:text="...App In Development..."
+        android:textColor="#000000"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
