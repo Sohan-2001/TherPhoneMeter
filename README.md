@@ -5,3 +5,5 @@ An android app to estimate surrounding temperature based on device battery tempe
 Here, in the section "App In Development" estimated temperature calculated based on battery temperature and surrounding light intensity should be there
 
 NOTE: hardware Ambient Temperature Sensor not to be used for not all phones have this chip
+
+<b>HELP ME TO ADD THE ALGORITHM IN "ActivityMain.java"</b>
