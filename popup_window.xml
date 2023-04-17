@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="#C4FBC6"
+    android:background="#021240"
     android:gravity="center">
 
     <TextView
@@ -14,13 +14,13 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
-        android:fontFamily="sans-serif-light"
+        android:fontFamily="monospace"
         android:gravity="center|start"
-        android:text="This application is made by Team ASK(Abdul,Sohan,Keshav) as part of their project for learning purpose only\n\nThis works based on your device's battery temperature\nFor better result, keep your device idle for a few moments (atleaast 5 mins) before checking.
+        android:text="This application is made by Team ASK(Abdul,Sohan,Keshav) as part of their project for learning purpose only\n\nThis works based on your device's battery temperature\nFor better result, keep your device idle for a few moments (at least 5 mins) before checking.
 \n\n(tap anywhere on the screen to close this panel)"
-        android:textColor="#0D1650"
+        android:textColor="#EFFFBF"
         android:textSize="16sp"
-        android:textStyle="bold"
+        android:textStyle="normal"
         tools:ignore="HardcodedText" />
 
 </RelativeLayout>
