@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#020826"
+    android:layout_gravity="center"
+    android:background="#D8FED70E"
+    android:foregroundGravity="center"
+    app:layout_anchorGravity="center"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textViewtemp"
         android:layout_width="417dp"
         android:layout_height="53dp"
-        android:background="#423949AB"
+        android:background="#86270F"
         android:clickable="false"
         android:contextClickable="false"
         android:fontFamily="sans-serif-light"
@@ -20,22 +23,23 @@
         android:inputType="text|textPhonetic|textPassword|textCapCharacters"
         android:text="Phone Battery Temperature"
         android:textAlignment="gravity"
+        android:textAllCaps="true"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintHorizontal_bias="0.403"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.224"
-        tools:ignore="HardcodedText,TextViewEdits" />
+        app:layout_constraintVertical_bias="0.248"
+        tools:ignore="HardcodedText,TextViewEdits,VisualLintBounds" />
 
     <TextView
         android:id="@+id/textViewLight"
         android:layout_width="416dp"
         android:layout_height="58dp"
-        android:background="#423949AB"
+        android:background="#86270F"
         android:clickable="false"
         android:contextClickable="false"
         android:fontFamily="sans-serif-light"
@@ -49,78 +53,79 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.359"
-        tools:ignore="HardcodedText,TextViewEdits" />
+        app:layout_constraintVertical_bias="0.417"
+        tools:ignore="HardcodedText,TextViewEdits,VisualLintBounds" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#5DB00020"
         android:text="Click To Check"
+        android:textColor="#620404"
         app:iconTintMode="add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.099"
+        app:layout_constraintVertical_bias="0.115"
         tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="362dp"
-        android:layout_height="53dp"
-        android:gravity="center|center_horizontal|top"
+        android:layout_width="409dp"
+        android:layout_height="43dp"
+        android:gravity="center_horizontal|center_vertical"
         android:text="        Estimate Your Surrounding Temperature"
-        android:textColor="#ffffff"
-        android:textSize="16sp"
+        android:textColor="#5F0707"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="HardcodedText,TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="366dp"
-        android:layout_height="46dp"
-        android:fontFamily="sans-serif-condensed"
-        android:gravity="center"
+        android:layout_width="414dp"
+        android:layout_height="68dp"
+        android:fontFamily="@font/amaranth_bold"
+        android:gravity="center|center_horizontal|center_vertical"
         android:text="(Estimated) Your Surrounding Temperature"
-        android:textColor="#CCE8EB"
+        android:textColor="#5F0707"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526"
+        tools:ignore="HardcodedText,TextSizeCheck,VisualLintBounds" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="329dp"
         android:layout_height="259dp"
-        android:background="#033D38"
+        android:background="#86270F"
+        android:fontFamily="@font/alfa_slab_one"
         android:gravity="center"
         android:text="Temperature °C"
-        android:textColor="#EFE3AE"
-        android:textSize="24sp"
+        android:textColor="#FFEB81"
+        android:textSize="25sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.929" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="125dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="107dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.929"
+        tools:ignore="HardcodedText" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -129,11 +134,59 @@
         android:background="#3949AB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/ic_menu_info_details"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="309dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/bigshot_one"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textColorHint="#BEFF01"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.7"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="257dp"
+        android:layout_height="52dp"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.906" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="111dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/anton"
+        android:gravity="right|top"
+        android:text="New Summer Theme"
+        android:textColor="#DD2C00"
+        android:textColorHighlight="#801D05"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.997"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
