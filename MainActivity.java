@@ -1,27 +1,29 @@
 package com.example.thermo;
 
 import android.annotation.SuppressLint;
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
-import android.os.BatteryManager;
-import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
-import android.widget.PopupWindow;
-import android.widget.TextView;
-import java.time.LocalTime;
+import android.content.BroadcastReceiver; //listens to broadcasts
+import android.content.Context; //provides access to android services like location, or broadcast receiving
+import android.content.Intent; //start service, broadcast message
+import android.content.IntentFilter; // fetches information about app activities
+//android.content supplies data from one place to other
+import android.hardware.Sensor; //lists to hardware sensors
+import android.hardware.SensorEvent; //holds the sensor's type, collected data and more
+import android.hardware.SensorEventListener; //checks new sensors data
+import android.hardware.SensorManager; ///provides access it hardware sensors
+import android.os.BatteryManager; //contains strings and vales needed for battery and fetches battery properties
+import android.os.Bundle; //pass data from one activity to another
+//An activity is a single frame
+import android.view.Gravity; //positioning the contents in the activity
+import android.view.LayoutInflater; //to create layouts
+import android.view.View; //basic building block of UI components like textView, editText, buttons...
+import android.widget.Button; //for handling clickable contexts
+import android.widget.ImageButton; //for handling image filled clickable contexts
+import android.widget.LinearLayout; //layout that positions views vertically or horizontally
+import android.widget.PopupWindow; //for pop-up screen
+import android.widget.TextView; //to display texts
+import java.time.LocalTime; //for fetching local time
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity; //to support new features on old devices
 
 public class MainActivity extends AppCompatActivity {
     TextView temp,light,TEMP,showMessage,showEmoji; //Reading Temperature Variable
