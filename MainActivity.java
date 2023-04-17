@@ -10,7 +10,7 @@ import android.hardware.Sensor; //lists to hardware sensors
 import android.hardware.SensorEvent; //holds the sensor's type, collected data and more
 import android.hardware.SensorEventListener; //checks new sensors data
 import android.hardware.SensorManager; ///provides access it hardware sensors
-import android.os.BatteryManager; //contains strings and vales needed for battery and fetches battery properties
+import android.os.BatteryManager; //contains strings and values needed for battery and fetches battery properties
 import android.os.Bundle; //pass data from one activity to another
 //An activity is a single frame
 import android.view.Gravity; //positioning the contents in the activity
