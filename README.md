@@ -1,4 +1,4 @@
-# TherPhoneMeter ![PlayStore Link(https://play.google.com/store/apps/details?id=com.sohan.thermo)]
+# TherPhoneMeter ![PlayStore Link](https://play.google.com/store/apps/details?id=com.sohan.thermo)
 An android app to estimate surrounding temperature based on device battery temperature and light intensity
 
 ![Screenshot_20230620-003411](https:![Screenshot_20230620-003400](https://github.com/Sohan-2001/TherPhoneMeter/assets/112119230/714efbce-ccdb-421b-9216-2c429c066d30)
